@@ -134,7 +134,7 @@ export default function AboutSection({ className }: AboutSectionProps) {
               return (
                 <div
                   key={value.title}
-                  className="group bg-white rounded-2xl p-8 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-3 border border-gray-100 hover:border-primary-200 hover:bg-gradient-to-b hover:from-primary-50 hover:to-white cursor-pointer"
+                  className="group bg-gradient-to-b from-gray-100 to-gray-50 rounded-2xl p-8 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-3 border border-gray-200 hover:border-primary-200 hover:bg-gradient-to-b hover:from-primary-50 hover:to-white cursor-pointer"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="w-14 h-14 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md group-hover:shadow-lg border border-gray-300">

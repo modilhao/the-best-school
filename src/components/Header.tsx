@@ -109,10 +109,10 @@ export default function Header({ className }: HeaderProps) {
             <button
               onClick={() => scrollToSection('#admissions')}
               className={cn(
-                'group relative px-8 py-3 rounded-2xl font-bold text-sm transition-all duration-300 hover:shadow-xl hover:scale-105 overflow-hidden',
+                'group relative px-8 py-3 rounded-2xl font-bold text-sm transition-all duration-300 hover:shadow-xl hover:scale-105 overflow-hidden border-2',
                 isScrolled
-                  ? 'bg-primary-600 hover:bg-primary-700 text-white shadow-lg'
-                  : 'bg-white text-primary-700 hover:bg-gray-50 shadow-lg backdrop-blur-sm'
+                  ? 'bg-primary-700 hover:bg-primary-800 text-white shadow-lg border-primary-800'
+                  : 'bg-white text-primary-700 hover:bg-gray-50 shadow-lg backdrop-blur-sm border-white'
               )}
             >
               <span className="relative z-10 flex items-center">
@@ -123,7 +123,7 @@ export default function Header({ className }: HeaderProps) {
               <div className={cn(
                 "absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100",
                 isScrolled
-                  ? "bg-gradient-to-r from-primary-700 to-primary-800"
+                  ? "bg-gradient-to-r from-primary-800 to-primary-900"
                   : "bg-gradient-to-r from-gray-50 to-white"
               )} />
             </button>
@@ -165,7 +165,7 @@ export default function Header({ className }: HeaderProps) {
         className={cn(
           'lg:hidden transition-all duration-300 overflow-hidden',
           isMobileMenuOpen
-            ? 'max-h-96 opacity-100'
+            ? 'max-h-screen opacity-100'
             : 'max-h-0 opacity-0'
         )}
       >
@@ -194,7 +194,7 @@ export default function Header({ className }: HeaderProps) {
                   Apply Now
                   <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-100 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
             </div>
           </nav>

@@ -46,7 +46,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
           {/* Main Headline */}
           <h1 className="heading-primary text-white mb-6 animate-slide-up">
             Excellence in
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-accent-blue">
+            <span className="block text-white font-bold drop-shadow-lg">
               International Education
             </span>
           </h1>

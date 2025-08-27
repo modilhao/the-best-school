@@ -104,7 +104,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ className }) => {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-white rounded-3xl shadow-2xl p-12">
+            <div className="bg-gradient-to-b from-gray-100 to-gray-50 rounded-3xl shadow-2xl p-12">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
@@ -155,7 +155,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ className }) => {
 
         {/* Form */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-b from-gray-100 to-gray-50 rounded-3xl shadow-2xl p-8 md:p-12">
             {formState.error && (
               <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-xl flex items-center gap-3">
                 <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0" />

@@ -118,7 +118,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-2 border border-gray-100 hover:border-primary-200 cursor-pointer"
+                className="bg-gradient-to-b from-gray-100 to-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-2 border border-gray-200 hover:border-primary-200 cursor-pointer"
               >
                 <div className={cn(
                   "w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110",
@@ -175,8 +175,8 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
 
               {/* Author Info */}
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center mb-4 border border-gray-300">
-                  <span className="text-black font-bold text-xl">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 rounded-full flex items-center justify-center mb-4 border border-primary-800">
+                  <span className="text-white font-bold text-xl">
                     {currentTestimonial.name.charAt(0)}
                   </span>
                 </div>
@@ -229,8 +229,8 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
-                  <span className="text-black font-semibold text-sm">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-700 rounded-full flex items-center justify-center flex-shrink-0 border border-primary-800">
+                  <span className="text-white font-semibold text-sm">
                     {testimonial.name.charAt(0)}
                   </span>
                 </div>

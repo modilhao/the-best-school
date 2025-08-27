@@ -53,7 +53,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
             return (
               <div
                 key={program.id}
-                className="group bg-gradient-to-b from-gray-50 to-white rounded-3xl p-8 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-3 border border-gray-100 hover:border-primary-200 hover:bg-gradient-to-b hover:from-primary-50 hover:to-white cursor-pointer"
+                className="group bg-gradient-to-b from-gray-100 to-gray-50 rounded-3xl p-8 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-3 border border-gray-200 hover:border-primary-200 hover:bg-gradient-to-b hover:from-primary-50 hover:to-white cursor-pointer"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Program Icon */}
@@ -91,7 +91,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
                 {/* Learn More Button */}
                 <button
                   onClick={() => scrollToSection('#admissions')}
-                  className="group/btn w-full bg-white hover:bg-gray-100 text-black px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-medium flex items-center justify-center hover:scale-105 active:scale-95 relative overflow-hidden border border-gray-300"
+                  className="group/btn w-full bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-medium flex items-center justify-center hover:scale-105 active:scale-95 relative overflow-hidden border border-gray-700"
                 >
                   <span className="relative z-10 flex items-center">
                     Learn More
@@ -177,7 +177,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
           </p>
           <button
             onClick={() => scrollToSection('#admissions')}
-            className="group bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-large hover:scale-105 inline-flex items-center border border-gray-300"
+            className="group bg-primary-700 hover:bg-primary-800 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-large hover:scale-105 inline-flex items-center border border-primary-800"
           >
             Apply for 2026
             <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />

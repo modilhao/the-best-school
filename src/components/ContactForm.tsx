@@ -130,7 +130,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
       <section id="contact" className={cn("py-20 bg-gradient-to-br from-blue-50 to-indigo-100", className)}>
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-gradient-to-b from-gray-100 to-gray-50 rounded-2xl shadow-xl p-8">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
                   <CheckCircle className="w-8 h-8 text-green-600" />
@@ -171,7 +171,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
 
           <div className="max-w-4xl mx-auto">
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-gradient-to-b from-gray-100 to-gray-50 rounded-2xl shadow-xl p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 {formState.error && (
                   <div className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-center space-x-3">
