@@ -18,25 +18,21 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
       name: 'Facebook',
       icon: Facebook,
       url: 'https://facebook.com/thebestschool',
-      color: 'hover:text-blue-600'
     },
     {
       name: 'Instagram',
       icon: Instagram,
       url: 'https://instagram.com/thebestschool',
-      color: 'hover:text-pink-600'
     },
     {
       name: 'YouTube',
       icon: Youtube,
       url: 'https://youtube.com/@thebestschool',
-      color: 'hover:text-red-600'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
       url: 'https://linkedin.com/company/thebestschool',
-      color: 'hover:text-blue-700'
     }
   ];
 

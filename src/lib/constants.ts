@@ -111,8 +111,8 @@ export const CONTACT_INFO: ContactInfo = {
   phone: '+48 22 123 4567',
   socialMedia: {
     facebook: 'https://facebook.com/thebestschool',
-    instagram: 'https://instagram.com/thebestschool',
-    linkedin: 'https://linkedin.com/company/thebestschool'
+  instagram: 'https://instagram.com/thebestschool',
+  linkedin: 'https://linkedin.com/company/thebestschool'
   }
 };
 

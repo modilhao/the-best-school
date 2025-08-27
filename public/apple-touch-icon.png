@@ -1,0 +1,7 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="40" fill="#2563eb"/>
+  <path d="M90 45C75.087 45 63 57.087 63 72V108C63 122.913 75.087 135 90 135C104.913 135 117 122.913 117 108V72C117 57.087 104.913 45 90 45Z" fill="white"/>
+  <circle cx="90" cy="72" r="18" fill="#2563eb"/>
+  <rect x="72" y="90" width="36" height="27" rx="4" fill="#2563eb"/>
+  <text x="90" y="155" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">THE BEST</text>
+</svg>

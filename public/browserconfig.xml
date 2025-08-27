@@ -9,11 +9,11 @@
       <TileColor>#2563eb</TileColor>
     </tile>
     <notification>
-      <polling-uri src="https://thebestschool.com.br/notifications/feed1.xml"/>
-      <polling-uri2 src="https://thebestschool.com.br/notifications/feed2.xml"/>
-      <polling-uri3 src="https://thebestschool.com.br/notifications/feed3.xml"/>
-      <polling-uri4 src="https://thebestschool.com.br/notifications/feed4.xml"/>
-      <polling-uri5 src="https://thebestschool.com.br/notifications/feed5.xml"/>
+      <polling-uri src="https://thebest.edu.pl/notifications/feed1.xml"/>
+      <polling-uri2 src="https://thebest.edu.pl/notifications/feed2.xml"/>
+      <polling-uri3 src="https://thebest.edu.pl/notifications/feed3.xml"/>
+      <polling-uri4 src="https://thebest.edu.pl/notifications/feed4.xml"/>
+      <polling-uri5 src="https://thebest.edu.pl/notifications/feed5.xml"/>
       <frequency>30</frequency>
       <cycle>1</cycle>
     </notification>

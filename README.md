@@ -129,7 +129,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 📞 Contato
 
 - **Email**: modilhao@thebest.edu.pl
-- **Website**: [The Best School](https://thebestschool.com)
+- **Website**: [The Best School](https://thebest.edu.pl)
 
 ---
 

@@ -10,28 +10,28 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Best School - Educação de Excelência | Escola Particular Premium",
-    template: "%s | The Best School - Educação de Excelência"
+    default: "The Best School - Excellence in Education | Premium Private School",
+    template: "%s | The Best School - Excellence in Education"
   },
-  description: "🎓 The Best School oferece educação de excelência com metodologia inovadora. Educação Infantil, Ensino Fundamental e Médio. Matrículas abertas! ✨ Agende sua visita.",
+  description: "🎓 The Best School offers excellence in education with innovative methodology. Early Childhood, Elementary and High School. Enrollment open! ✨ Schedule your visit.",
   keywords: [
-    "escola particular",
-    "educação infantil",
-    "ensino fundamental",
-    "ensino médio",
-    "educação de qualidade",
-    "escola inovadora",
-    "desenvolvimento infantil",
-    "metodologia ativa",
-    "escola bilíngue",
-    "educação integral",
-    "matrículas abertas",
-    "melhor escola",
-    "ensino personalizado",
-    "tecnologia educacional",
-    "formação cidadã"
+    "private school",
+    "early childhood education",
+    "elementary school",
+    "high school",
+    "quality education",
+    "innovative school",
+    "child development",
+    "active methodology",
+    "bilingual school",
+    "comprehensive education",
+    "enrollment open",
+    "best school",
+    "personalized learning",
+    "educational technology",
+    "character formation"
   ],
-  authors: [{ name: "The Best School", url: "https://thebestschool.com.br" }],
+  authors: [{ name: "The Best School", url: "https://thebest.edu.pl" }],
   creator: "The Best School",
   publisher: "The Best School",
   category: "Education",
@@ -51,21 +51,21 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "pt_BR",
-    url: "https://thebestschool.com.br",
+    locale: "en_US",
+    url: "https://thebest.edu.pl",
     siteName: "The Best School",
-    title: "The Best School - Educação de Excelência | Escola Particular Premium",
-    description: "🎓 Descubra a melhor educação para seu filho na The Best School. Metodologia inovadora, professores qualificados e ambiente acolhedor. Matrículas abertas! ✨",
+    title: "The Best School - Excellence in Education | Premium Private School",
+    description: "🎓 Discover the best education for your child at The Best School. Innovative methodology, qualified teachers and welcoming environment. Enrollment open! ✨",
     images: [
       {
-        url: "https://thebestschool.com.br/og-image.jpg",
+        url: "https://thebest.edu.pl/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "The Best School - Educação de Excelência | Escola Particular Premium",
+        alt: "The Best School - Excellence in Education | Premium Private School",
         type: "image/jpeg",
       },
       {
-        url: "https://thebestschool.com.br/og-image-square.jpg",
+        url: "https://thebest.edu.pl/og-image-square.jpg",
         width: 1200,
         height: 1200,
         alt: "The Best School - Logo",
@@ -77,11 +77,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@thebestschool",
     creator: "@thebestschool",
-    title: "The Best School - Educação de Excelência | Escola Particular Premium",
-    description: "🎓 Descubra a melhor educação para seu filho. Metodologia inovadora, professores qualificados. Matrículas abertas! ✨",
+    title: "The Best School - Excellence in Education | Premium Private School",
+    description: "🎓 Discover the best education for your child. Innovative methodology, qualified teachers. Enrollment open! ✨",
     images: {
-      url: "https://thebestschool.com.br/og-image.jpg",
-      alt: "The Best School - Educação de Excelência",
+      url: "https://thebest.edu.pl/og-image.jpg",
+      alt: "The Best School - Excellence in Education",
     },
   },
   verification: {
@@ -90,10 +90,10 @@ export const metadata: Metadata = {
     yahoo: "yahoo-site-verification-code",
   },
   alternates: {
-    canonical: "https://thebestschool.com.br",
+    canonical: "https://thebest.edu.pl",
     languages: {
-      "pt-BR": "https://thebestschool.com.br",
-      "en-US": "https://thebestschool.com.br/en",
+      "en-US": "https://thebest.edu.pl",
+    "pt-BR": "https://thebest.edu.pl/pt",
     },
   },
   other: {
@@ -114,7 +114,8 @@ export default function RootLayout({
     <html lang="pt-BR" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#2563eb" />

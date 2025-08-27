@@ -1,5 +1,5 @@
 # Robots.txt for The Best School
-# https://thebestschool.com.br/robots.txt
+# https://thebest.edu.pl/robots.txt
 
 # Allow all web crawlers access to all content
 User-agent: *
@@ -36,7 +36,7 @@ Allow: /favicon.ico
 Allow: /robots.txt
 
 # Sitemap location
-Sitemap: https://thebestschool.com.br/sitemap.xml
+Sitemap: https://thebest.edu.pl/sitemap.xml
 
 # Host preference (optional)
-Host: https://thebestschool.com.br
+Host: https://thebest.edu.pl

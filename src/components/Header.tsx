@@ -188,13 +188,13 @@ export default function Header({ className }: HeaderProps) {
                   scrollToSection('#admissions');
                   setIsMobileMenuOpen(false);
                 }}
-                className="group w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 hover:shadow-xl hover:scale-105 relative overflow-hidden"
+                className="group w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-black border-2 border-black px-8 py-4 rounded-2xl font-bold transition-all duration-300 hover:shadow-xl hover:scale-105 relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   Apply Now
                   <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-100 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
             </div>
           </nav>

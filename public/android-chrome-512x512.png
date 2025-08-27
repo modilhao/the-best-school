@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="#2563eb"/>
+  <path d="M256 128C222.863 128 196 154.863 196 188V324C196 357.137 222.863 384 256 384C289.137 384 316 357.137 316 324V188C316 154.863 289.137 128 256 128Z" fill="white"/>
+  <circle cx="256" cy="188" r="51" fill="#2563eb"/>
+  <rect x="205" y="239" width="102" height="75" rx="10" fill="#2563eb"/>
+  <text x="256" y="440" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="40" font-weight="bold">THE BEST</text>
+</svg>

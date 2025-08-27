@@ -1,14 +1,14 @@
 {
-  "name": "The Best School - Educação de Excelência",
+  "name": "The Best School - Excellence in Education",
   "short_name": "The Best School",
-  "description": "Escola particular de excelência oferecendo educação infantil, ensino fundamental e médio com metodologia inovadora.",
+  "description": "Premium private school offering early childhood, elementary and high school education with innovative methodology.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "orientation": "portrait-primary",
   "scope": "/",
-  "lang": "pt-BR",
+  "lang": "en-US",
   "dir": "ltr",
   "categories": ["education", "school", "learning"],
   "icons": [
@@ -45,9 +45,9 @@
   ],
   "shortcuts": [
     {
-      "name": "Matrículas",
-      "short_name": "Matrículas",
-      "description": "Faça sua matrícula online",
+      "name": "Enrollment",
+      "short_name": "Enrollment",
+      "description": "Apply for enrollment online",
       "url": "/#enrollment",
       "icons": [
         {
@@ -58,9 +58,9 @@
       ]
     },
     {
-      "name": "Programas",
-      "short_name": "Programas",
-      "description": "Conheça nossos programas educacionais",
+      "name": "Programs",
+      "short_name": "Programs",
+      "description": "Discover our educational programs",
       "url": "/#programs",
       "icons": [
         {
@@ -71,9 +71,9 @@
       ]
     },
     {
-      "name": "Sobre Nós",
-      "short_name": "Sobre",
-      "description": "Conheça a The Best School",
+      "name": "About Us",
+      "short_name": "About",
+      "description": "Learn about The Best School",
       "url": "/#about",
       "icons": [
         {

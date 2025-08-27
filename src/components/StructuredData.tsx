@@ -9,7 +9,7 @@ interface StructuredDataProps {
 
 const StructuredData: React.FC<StructuredDataProps> = ({ type = 'educationalOrganization' }) => {
   const getStructuredData = () => {
-    const baseUrl = 'https://thebestschool.com.br';
+    const baseUrl = 'https://thebest.edu.pl';
     
     switch (type) {
       case 'organization':
@@ -38,9 +38,9 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type = 'educationalOrga
           },
           "sameAs": [
             "https://facebook.com/thebestschool",
-            "https://instagram.com/thebestschool",
-            "https://linkedin.com/company/thebestschool",
-            "https://youtube.com/@thebestschool"
+        "https://instagram.com/thebestschool",
+        "https://linkedin.com/company/thebestschool",
+        "https://youtube.com/@thebestschool"
           ]
         };
 
