@@ -1,0 +1,42 @@
+# Robots.txt for The Best School
+# https://thebestschool.com.br/robots.txt
+
+# Allow all web crawlers access to all content
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Disallow access to admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Disallow access to temporary and cache files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /tmp/
+Disallow: /cache/
+
+# Allow access to important files
+Allow: /sitemap.xml
+Allow: /favicon.ico
+Allow: /robots.txt
+
+# Sitemap location
+Sitemap: https://thebestschool.com.br/sitemap.xml
+
+# Host preference (optional)
+Host: https://thebestschool.com.br

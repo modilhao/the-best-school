@@ -48,11 +48,11 @@ export default function AboutSection({ className }: AboutSectionProps) {
     <section
       id="about"
       className={cn(
-        'py-20 lg:py-32 bg-gradient-to-b from-gray-50 to-white',
+        'section-padding bg-gradient-to-b from-gray-50 to-white',
         className
       )}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
           {/* Logo */}
@@ -70,13 +70,13 @@ export default function AboutSection({ className }: AboutSectionProps) {
             <Award className="w-4 h-4 mr-2" />
             About The Best School
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="heading-secondary text-gray-900 mb-6">
             Empowering Global Minds
             <span className="block text-primary-600">
               Through Excellence
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-body text-gray-600 max-w-3xl mx-auto">
             Since {SCHOOL_INFO.foundedYear}, we have been dedicated to providing world-class international education 
             that prepares students for success in an increasingly connected world.
           </p>
@@ -134,16 +134,16 @@ export default function AboutSection({ className }: AboutSectionProps) {
               return (
                 <div
                   key={value.title}
-                  className="group bg-white rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-2"
+                  className="group bg-white rounded-2xl p-8 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-3 border border-gray-100 hover:border-primary-200 hover:bg-gradient-to-b hover:from-primary-50 hover:to-white cursor-pointer"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="w-7 h-7 text-white" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md group-hover:shadow-lg border border-gray-300">
+                    <IconComponent className="w-7 h-7 text-black group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">
+                  <h4 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
                     {value.title}
                   </h4>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                     {value.description}
                   </p>
                 </div>
@@ -153,46 +153,46 @@ export default function AboutSection({ className }: AboutSectionProps) {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-8 lg:p-12 text-white">
+        <div className="mt-20 bg-gradient-to-r from-gray-100 to-gray-200 rounded-3xl p-8 lg:p-12">
           <div className="text-center mb-12">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
+            <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-black">
               Excellence in Numbers
             </h3>
-            <p className="text-primary-100 text-lg">
+            <p className="text-black text-lg">
               Our achievements reflect our commitment to educational excellence
             </p>
           </div>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold mb-2">
+              <div className="text-3xl lg:text-4xl font-bold mb-2 text-black">
                 {SCHOOL_INFO.studentsCount}
               </div>
-              <div className="text-primary-200">
+              <div className="text-black">
                 Students Enrolled
               </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold mb-2">
+              <div className="text-3xl lg:text-4xl font-bold mb-2 text-black">
                 {SCHOOL_INFO.teachersCount}
               </div>
-              <div className="text-primary-200">
+              <div className="text-black">
                 Expert Educators
               </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold mb-2">
+              <div className="text-3xl lg:text-4xl font-bold mb-2 text-black">
                 {SCHOOL_INFO.nationalitiesCount}
               </div>
-              <div className="text-primary-200">
+              <div className="text-black">
                 Nationalities
               </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold mb-2">
+              <div className="text-3xl lg:text-4xl font-bold mb-2 text-black">
                 100%
               </div>
-              <div className="text-primary-200">
+              <div className="text-black">
                 University Acceptance
               </div>
             </div>

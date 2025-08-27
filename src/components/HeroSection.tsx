@@ -35,7 +35,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-20 max-w-7xl mx-auto container-padding text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium mb-8 animate-fade-in">
@@ -44,7 +44,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 animate-slide-up">
+          <h1 className="heading-primary text-white mb-6 animate-slide-up">
             Excellence in
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-accent-blue">
               International Education
@@ -52,7 +52,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+          <p className="text-body text-xl sm:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto animate-slide-up">
             {SCHOOL_INFO.mission}
           </p>
 
@@ -60,14 +60,14 @@ export default function HeroSection({ className }: HeroSectionProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up">
             <button
               onClick={handleCTAClick}
-              className="group bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-large hover:scale-105 flex items-center"
+              className="group btn-primary text-lg py-4 hover:shadow-large flex items-center focus-ring"
             >
               Start Your Journey
               <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
             </button>
             <button
               onClick={() => scrollToSection('#about')}
-              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 border border-white/30 hover:border-white/50 flex items-center"
+              className="group bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 border border-gray-300 hover:border-gray-400 flex items-center focus-ring hover:scale-105"
             >
               Learn More
             </button>
@@ -79,7 +79,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
               <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
                 {SCHOOL_INFO.studentsCount}
               </div>
-              <div className="text-gray-300 font-medium">
+              <div className="text-gray-200 font-medium">
                 International Students
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
               <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
                 {SCHOOL_INFO.nationalitiesCount}
               </div>
-              <div className="text-gray-300 font-medium">
+              <div className="text-gray-200 font-medium">
                 Nationalities
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function HeroSection({ className }: HeroSectionProps) {
               <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
                 {SCHOOL_INFO.teachersCount}
               </div>
-              <div className="text-gray-300 font-medium">
+              <div className="text-gray-200 font-medium">
                 Expert Teachers
               </div>
             </div>

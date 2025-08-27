@@ -50,7 +50,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
           "w-4 h-4",
           i < rating
             ? "fill-yellow-400 text-yellow-400"
-            : "fill-gray-200 text-gray-200"
+            : "fill-gray-300 text-gray-300"
         )}
       />
     ));
@@ -89,7 +89,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
     <section
       id="testimonials"
       className={cn(
-        "py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden",
+        "section-padding bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden",
         className
       )}
     >
@@ -99,13 +99,13 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-100 rounded-full opacity-20 blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto container-padding relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="heading-secondary text-gray-900 mb-6">
             What They Say About Us
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-body text-gray-600 max-w-3xl mx-auto">
             Discover why parents and students choose our school as the ideal place 
             to grow, learn and develop.
           </p>
@@ -118,7 +118,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group"
+                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-2 border border-gray-100 hover:border-primary-200 cursor-pointer"
               >
                 <div className={cn(
                   "w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110",
@@ -144,18 +144,18 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
             {/* Navigation Buttons */}
             <button
               onClick={goToPrevious}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-110 z-10"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-110 hover:bg-primary-50 active:scale-95 z-10 group"
               aria-label="Previous testimonial"
             >
-              <ChevronLeft className="w-6 h-6 text-gray-600" />
+              <ChevronLeft className="w-6 h-6 text-gray-600 group-hover:text-primary-600 transition-colors duration-300" />
             </button>
 
             <button
               onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-110 z-10"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center hover:shadow-xl transition-all duration-300 hover:scale-110 hover:bg-primary-50 active:scale-95 z-10 group"
               aria-label="Next testimonial"
             >
-              <ChevronRight className="w-6 h-6 text-gray-600" />
+              <ChevronRight className="w-6 h-6 text-gray-600 group-hover:text-primary-600 transition-colors duration-300" />
             </button>
 
             {/* Testimonial Content */}
@@ -175,8 +175,8 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
 
               {/* Author Info */}
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white font-bold text-xl">
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center mb-4 border border-gray-300">
+                  <span className="text-black font-bold text-xl">
                     {currentTestimonial.name.charAt(0)}
                   </span>
                 </div>
@@ -229,8 +229,8 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) 
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-semibold text-sm">
+                <div className="w-10 h-10 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center flex-shrink-0 border border-gray-300">
+                  <span className="text-black font-semibold text-sm">
                     {testimonial.name.charAt(0)}
                   </span>
                 </div>

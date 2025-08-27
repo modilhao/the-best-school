@@ -22,24 +22,24 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
     <section
       id="programs"
       className={cn(
-        'py-20 lg:py-32 bg-white',
+        'section-padding bg-white',
         className
       )}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
             <BookOpen className="w-4 h-4 mr-2" />
             Academic Programs
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="heading-secondary text-gray-900 mb-6">
             World-Class Education
             <span className="block text-primary-600">
               For Every Stage
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-body text-gray-600 max-w-3xl mx-auto">
             Our comprehensive academic programs are designed to challenge and inspire students 
             at every level, preparing them for success in top universities worldwide.
           </p>
@@ -53,16 +53,16 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
             return (
               <div
                 key={program.id}
-                className="group bg-gradient-to-b from-gray-50 to-white rounded-3xl p-8 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-3 border border-gray-100"
+                className="group bg-gradient-to-b from-gray-50 to-white rounded-3xl p-8 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-3 border border-gray-100 hover:border-primary-200 hover:bg-gradient-to-b hover:from-primary-50 hover:to-white cursor-pointer"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Program Icon */}
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <IconComponent className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md group-hover:shadow-lg border border-gray-300">
+                  <IconComponent className="w-8 h-8 text-black group-hover:scale-110 transition-transform duration-300" />
                 </div>
 
                 {/* Age Range Badge */}
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-4">
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-4 group-hover:bg-primary-200 group-hover:scale-105 transition-all duration-300">
                   {program.ageRange}
                 </div>
 
@@ -91,10 +91,12 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
                 {/* Learn More Button */}
                 <button
                   onClick={() => scrollToSection('#admissions')}
-                  className="group/btn w-full bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-medium flex items-center justify-center"
+                  className="group/btn w-full bg-white hover:bg-gray-100 text-black px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-medium flex items-center justify-center hover:scale-105 active:scale-95 relative overflow-hidden border border-gray-300"
                 >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
+                  <span className="relative z-10 flex items-center">
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1 group-hover/btn:scale-110" />
+                  </span>
                 </button>
               </div>
             );
@@ -113,7 +115,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
                   <CheckCircle className="w-6 h-6 text-accent-green mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">International Curriculum</h4>
-                    <p className="text-gray-300 text-sm">
+                    <p className="text-gray-200 text-sm">
                       Cambridge and IB programs recognized by top universities globally
                     </p>
                   </div>
@@ -122,7 +124,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
                   <CheckCircle className="w-6 h-6 text-accent-green mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Expert Faculty</h4>
-                    <p className="text-gray-300 text-sm">
+                    <p className="text-gray-200 text-sm">
                       Highly qualified teachers with international experience
                     </p>
                   </div>
@@ -131,7 +133,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
                   <CheckCircle className="w-6 h-6 text-accent-green mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Small Class Sizes</h4>
-                    <p className="text-gray-300 text-sm">
+                    <p className="text-gray-200 text-sm">
                       Personalized attention with maximum 20 students per class
                     </p>
                   </div>
@@ -140,7 +142,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
                   <CheckCircle className="w-6 h-6 text-accent-green mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">University Guidance</h4>
-                    <p className="text-gray-300 text-sm">
+                    <p className="text-gray-200 text-sm">
                       Comprehensive support for university applications worldwide
                     </p>
                   </div>
@@ -175,7 +177,7 @@ export default function ProgramsSection({ className }: ProgramsSectionProps) {
           </p>
           <button
             onClick={() => scrollToSection('#admissions')}
-            className="group bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-large hover:scale-105 inline-flex items-center"
+            className="group bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-large hover:scale-105 inline-flex items-center border border-gray-300"
           >
             Apply for 2026
             <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />

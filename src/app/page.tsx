@@ -5,12 +5,15 @@ import AboutSection from '@/components/AboutSection';
 import ProgramsSection from '@/components/ProgramsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import EnrollmentForm from '@/components/EnrollmentForm';
-import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
+import StructuredData from '@/components/StructuredData';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
+      <StructuredData type="educationalOrganization" />
+      <StructuredData type="website" />
+      <StructuredData type="organization" />
       <Header />
       <main>
         <HeroSection />
@@ -18,7 +21,6 @@ export default function Home() {
         <ProgramsSection />
         <TestimonialsSection />
         <EnrollmentForm />
-        <ContactForm />
       </main>
       <Footer />
     </div>

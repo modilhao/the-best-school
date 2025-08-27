@@ -89,7 +89,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ className }) => {
     }
   };
 
-  const inputClasses = "w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white";
+  const inputClasses = "w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-400 hover:shadow-sm focus:shadow-md transform focus:scale-[1.02]";
   const labelClasses = "block text-sm font-semibold text-gray-700 mb-2";
   const errorClasses = "text-red-500 text-sm mt-1";
 
@@ -348,21 +348,24 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ className }) => {
                   type="submit"
                   disabled={formState.isSubmitting}
                   className={cn(
-                    "inline-flex items-center gap-3 px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100",
+                    "group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-semibold rounded-xl transition-all duration-300 hover:bg-gray-100 hover:shadow-lg hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 overflow-hidden border border-gray-300",
                     formState.isSubmitting && "animate-pulse"
                   )}
                 >
-                  {formState.isSubmitting ? (
-                    <>
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                      Submitting...
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-5 h-5" />
-                      Submit Enrollment
-                    </>
-                  )}
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="relative z-10 flex items-center gap-3">
+                    {formState.isSubmitting ? (
+                      <>
+                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                        Submitting...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300" />
+                        Submit Enrollment
+                      </>
+                    )}
+                  </span>
                 </button>
               </div>
 

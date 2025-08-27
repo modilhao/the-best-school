@@ -169,54 +169,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  Contact Information
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600">modilhao@thebest.edu.pl</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Phone</h4>
-                      <p className="text-gray-600">+48 22 123 4567</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <h4 className="font-semibold text-gray-900 mb-4">Office Hours</h4>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>8:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>9:00 AM - 1:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sunday</span>
-                    <span>Closed</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <div className="max-w-4xl mx-auto">
             {/* Contact Form */}
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -233,7 +186,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                       Full Name *
                     </label>
                     <div className="relative">
-                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
                       <input
                         type="text"
                         id="name"
@@ -241,8 +194,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                         value={formData.name}
                         onChange={handleInputChange}
                         className={cn(
-                          "w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors",
-                          errors.name ? "border-red-300 bg-red-50" : "border-gray-300"
+                          "w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-gray-400 hover:shadow-md",
+                          errors.name ? "border-red-400 bg-red-50 focus:ring-red-500 focus:border-red-500" : "border-gray-300 bg-white"
                         )}
                         placeholder="Enter your full name"
                       />
@@ -257,7 +210,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                       Email Address *
                     </label>
                     <div className="relative">
-                      <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                      <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
                       <input
                         type="email"
                         id="email"
@@ -265,8 +218,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                         value={formData.email}
                         onChange={handleInputChange}
                         className={cn(
-                          "w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors",
-                          errors.email ? "border-red-300 bg-red-50" : "border-gray-300"
+                          "w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-gray-400 hover:shadow-md",
+                          errors.email ? "border-red-400 bg-red-50 focus:ring-red-500 focus:border-red-500" : "border-gray-300 bg-white"
                         )}
                         placeholder="Enter your email"
                       />
@@ -283,14 +236,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                       Phone Number
                     </label>
                     <div className="relative">
-                      <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                      <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
                       <input
                         type="tel"
                         id="phone"
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 bg-white rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-gray-400 hover:shadow-md"
                         placeholder="Enter your phone number"
                       />
                     </div>
@@ -306,8 +259,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       className={cn(
-                        "w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors",
-                        errors.subject ? "border-red-300 bg-red-50" : "border-gray-300"
+                        "w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-gray-400 hover:shadow-md",
+                        errors.subject ? "border-red-400 bg-red-50 focus:ring-red-500 focus:border-red-500" : "border-gray-300 bg-white"
                       )}
                     >
                       <option value="">Select a subject</option>
@@ -329,7 +282,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                     Message *
                   </label>
                   <div className="relative">
-                    <MessageSquare className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <MessageSquare className="absolute left-3 top-3 w-5 h-5 text-gray-500" />
                     <textarea
                       id="message"
                       name="message"
@@ -337,8 +290,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                       value={formData.message}
                       onChange={handleInputChange}
                       className={cn(
-                        "w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none",
-                        errors.message ? "border-red-300 bg-red-50" : "border-gray-300"
+                        "w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-gray-400 hover:shadow-md resize-none",
+                        errors.message ? "border-red-400 bg-red-50 focus:ring-red-500 focus:border-red-500" : "border-gray-300 bg-white"
                       )}
                       placeholder="Tell us how we can help you..."
                     />
@@ -352,23 +305,27 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                   type="submit"
                   disabled={formState.isSubmitting}
                   className={cn(
-                    "w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2",
+                    "group relative w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white py-4 px-8 rounded-2xl font-bold transition-all duration-300 flex items-center justify-center space-x-3 overflow-hidden shadow-lg",
                     formState.isSubmitting
                       ? "opacity-70 cursor-not-allowed"
-                      : "hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-0.5"
+                      : "hover:from-primary-700 hover:to-primary-800 hover:shadow-xl hover:scale-105 transform"
                   )}
                 >
-                  {formState.isSubmitting ? (
-                    <>
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                      <span>Sending...</span>
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-5 h-5" />
-                      <span>Send Message</span>
-                    </>
-                  )}
+                  <span className="relative z-10 flex items-center space-x-3">
+                    {formState.isSubmitting ? (
+                      <>
+                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                        <span>Sending Message...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                        <span>Send Message</span>
+                      </>
+                    )}
+                  </span>
+                  {/* Animated background */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </button>
               </form>
             </div>

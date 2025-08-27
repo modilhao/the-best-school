@@ -61,7 +61,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
   };
 
   return (
-    <footer className={cn("bg-gray-900 text-white relative overflow-hidden", className)}>
+    <footer className={cn("bg-gray-900 text-white relative overflow-hidden section-padding", className)}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full">
@@ -80,7 +80,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto container-padding relative z-10">
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
