@@ -110,10 +110,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={cn(
-                          "w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg",
-                          social.color
-                        )}
+                        className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
                         aria-label={`Follow on ${social.name}`}
                       >
                         <IconComponent className="w-5 h-5" />
